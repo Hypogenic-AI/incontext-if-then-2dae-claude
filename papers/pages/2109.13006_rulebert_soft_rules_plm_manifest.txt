@@ -1,0 +1,11 @@
+PDF: papers/2109.13006_rulebert_soft_rules_plm.pdf
+Total pages: 17
+Pages per chunk: 3
+
+Chunks:
+  2109.13006_rulebert_soft_rules_plm_chunk_001.pdf: pages 1-3
+  2109.13006_rulebert_soft_rules_plm_chunk_002.pdf: pages 4-6
+  2109.13006_rulebert_soft_rules_plm_chunk_003.pdf: pages 7-9
+  2109.13006_rulebert_soft_rules_plm_chunk_004.pdf: pages 10-12
+  2109.13006_rulebert_soft_rules_plm_chunk_005.pdf: pages 13-15
+  2109.13006_rulebert_soft_rules_plm_chunk_006.pdf: pages 16-17

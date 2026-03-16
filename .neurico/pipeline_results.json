@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/incontext-if-then-2dae-claude/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/incontext-if-then-2dae-claude/literature_review.md",
+        "resources_catalog": "/workspaces/incontext-if-then-2dae-claude/resources.md",
+        "papers_dir": "/workspaces/incontext-if-then-2dae-claude/papers",
+        "datasets_dir": "/workspaces/incontext-if-then-2dae-claude/datasets",
+        "code_dir": "/workspaces/incontext-if-then-2dae-claude/code"
+      },
+      "log_file": "/workspaces/incontext-if-then-2dae-claude/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/incontext-if-then-2dae-claude/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 2475.414210319519
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 1794.5004312992096,
+      "log_file": "/workspaces/incontext-if-then-2dae-claude/logs/execution_claude.log",
+      "transcript_file": "/workspaces/incontext-if-then-2dae-claude/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/incontext-if-then-2dae-claude"
+}

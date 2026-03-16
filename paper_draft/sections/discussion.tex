@@ -1,0 +1,33 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\para{Why do models over-trigger?} The most striking finding is the 2.83:1 false-positive-to-false-negative ratio. We hypothesize that this reflects training incentives: instruction-tuned models are rewarded for following instructions and penalized for ignoring them, creating a bias toward compliance. When a conditional rule appears in the system prompt, the model treats it as something to be obeyed rather than something to be conditionally evaluated. This bias is amplified in smaller models, where \gptnano produces 4.2 false positives per false negative. The practical implication is clear: when deploying conditional rules in system prompts, practitioners should expect rules to fire too often rather than too rarely.
+
+\para{The sustained condition gap.} Even \gptlarge drops to 78.6\% on sustained/adversarial conditions, making this the only category where the frontier model falls meaningfully below ceiling. This exposes a tension between two objectives: following system-prompt instructions (which say to trigger on a keyword) and complying with user requests (which say to ignore the rule). The fact that ``system override'' framing succeeds in suppressing rules even for \gptlarge suggests that robustness to prompt injection remains an open problem for conditional instruction following specifically.
+
+\para{Lexical conditions are not trivial.} Counter-intuitively, \gptnano performs worse on lexical conditions (50.0\%) than on semantic conditions (86.8\%). We attribute this to the dominant error type: \gptnano over-triggers lexical rules regardless of whether the keyword is present, while semantic conditions require a judgment call that the model sometimes gets right by chance. The lexical failure mode is not one of understanding but of \textit{gating}---the model cannot reliably suppress a rule it has been told about, even when the triggering condition is clearly absent.
+
+\para{Cross-language leakage.} An unexpected finding is that \gptlarge triggers on ``CEKPET'' when the rule specifies the English word ``secret.'' For multilingual models, lexical conditions are implicitly semantic: the model recognizes that the Cyrillic text carries the same meaning. Whether this is desirable depends on the application. For content moderation, cross-language triggering may be a feature; for precise keyword matching, it is a bug.
+
+\para{Implications for system-prompt design.} Our results suggest several practical guidelines:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item Use frontier models for conditional rules: \gptlarge achieves 97.2\% overall, while \gptnano achieves only 68.1\%.
+    \item Expect false positives: rules will over-trigger more than they under-trigger.
+    \item Treat adversarial robustness as a separate concern: even 97\%-accurate models drop to 79\% when users attempt overrides.
+    \item Place critical rules early in the system prompt: smaller models show positional bias, missing rules listed later.
+\end{itemize}
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\para{Single model family.} All three models are from the GPT-4.1 family, sharing architecture and training methodology. The category difficulty ranking may differ for models from other families (\eg Claude, Gemini, or open-source models).
+
+\para{Marker-based verification.} Our use of distinctive marker strings enables deterministic verification but creates an artificial task. In practice, conditional instructions produce more naturalistic changes (tone shifts, format changes, content additions) that may have different failure modes.
+
+\para{Deterministic decoding.} All experiments use temperature 0. Stochastic sampling may produce different error patterns, and the false-positive bias we observe could be attenuated or amplified under different decoding strategies.
+
+\para{Sample sizes.} Some categories have as few as 10 test cases (if-then-else) or 12 (negation), limiting statistical power for within-category analysis. Larger-scale evaluations would enable finer-grained conclusions about failure modes within each category.
+
+\para{English only.} All conditions and user messages are in English. The cross-language leakage we observe suggests that multilingual conditions may behave differently, but we do not systematically evaluate this.
+
+\para{Single turn.} All test cases are single-turn interactions. Conditional rule adherence may degrade further over multi-turn conversations as the model accumulates context.

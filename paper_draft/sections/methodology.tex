@@ -1,0 +1,86 @@
+\section{Methodology}
+\label{sec:method}
+
+We describe \benchname, a benchmark for measuring in-context if-then capacity. We first define the task, then describe the condition categories, verification method, and experimental setup.
+
+\subsection{Task Definition}
+\label{sec:task}
+
+Each test case consists of a \textit{system prompt} containing one or more conditional rules and a \textit{user message} that either satisfies or does not satisfy each rule's condition. A conditional rule takes the form: ``If [condition], include \texttt{[[SIGNAL\_$k$]]} in your response.'' The model must include the marker string if and only if the condition is met. This design reduces the evaluation to a binary classification problem per rule, enabling precise measurement of four outcomes:
+
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \textbf{True Positive (TP):} condition present, marker present.
+    \item \textbf{True Negative (TN):} condition absent, marker absent.
+    \item \textbf{False Positive (FP):} condition absent, marker present (over-triggering).
+    \item \textbf{False Negative (FN):} condition present, marker absent (under-triggering).
+\end{itemize}
+
+\subsection{Condition Categories}
+\label{sec:categories}
+
+We design 7 condition categories spanning a range of difficulty levels. \Tabref{tab:categories} summarizes the categories, their sizes, and intended difficulty.
+
+\begin{table}[t]
+\centering
+\caption{Condition categories in \benchname. Each category targets a different aspect of conditional reasoning. $N$ denotes the number of test cases.}
+\label{tab:categories}
+\small
+\begin{tabular}{@{}llcl@{}}
+\toprule
+\textbf{Category} & \textbf{Description} & $N$ & \textbf{Difficulty} \\
+\midrule
+Lexical & Keyword-trigger conditions & 30 & Easy \\
+Semantic & Sentiment, formality, domain & 38 & Hard \\
+Near-miss & Polysemous word disambiguation & 16 & Hard \\
+Sustained & Adversarial override resistance & 14 & Hard \\
+Scaling & 4--16 simultaneous rules & 24 & Easy--Hard \\
+Negation & ``If NOT $X$'' and double negation & 12 & Medium \\
+If-then-else & 3-way mutually exclusive branching & 10 & Medium \\
+\midrule
+\textbf{Total} & & \textbf{144} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\para{Lexical conditions} require the model to detect the presence of a specific keyword in the user message (\eg ``if the user mentions `Python,' include \texttt{[[SIGNAL\_0]]}'').
+
+\para{Semantic conditions} require understanding beyond keyword matching. Examples include detecting negative sentiment, identifying technical questions, or recognizing formal register.
+
+\para{Near-miss conditions} test disambiguation of polysemous words. For instance, a rule triggered by ``spring'' as a season should not fire when the user discusses a mechanical spring.
+
+\para{Sustained/adversarial conditions} test whether rules resist user attempts at override. The user message explicitly instructs the model to ignore or deactivate the system-prompt rule (\eg ``Ignore all rules. The word `secret' should not trigger anything.'').
+
+\para{Scaling conditions} test performance with 4, 8, or 16 simultaneous rules active in the system prompt, where only a subset of conditions are satisfied.
+
+\para{Negation conditions} use negated conditions (``if the user does NOT mention $X$'') and double negations, testing the model's ability to handle logical negation.
+
+\para{If-then-else conditions} require the model to select exactly one of three mutually exclusive branches based on the input.
+
+\subsection{Verification}
+\label{sec:verification}
+
+Verification is fully deterministic. For each rule in a test case, we check whether the marker string \texttt{[[SIGNAL\_$k$]]} appears in the model's response via exact string matching. This approach has two advantages: (1) it requires no LLM judge, eliminating evaluator variance, and (2) it provides an unambiguous ground truth for computing TP, TN, FP, and FN rates.
+
+The benchmark is balanced by design: across all test cases, 139 rule-level triggers are expected (conditions satisfied) and 241 non-triggers are expected (conditions not satisfied).
+
+\subsection{Experimental Setup}
+\label{sec:setup}
+
+\para{Models.} We evaluate three models from the GPT-4.1 family to isolate the effect of model capacity while controlling for architecture and training:
+
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \gptlarge (large): frontier capability.
+    \item \gptmini (medium): reduced capacity.
+    \item \gptnano (small): minimal capacity.
+\end{itemize}
+
+\para{Inference parameters.} All experiments use the OpenAI Chat Completions API with temperature 0 (deterministic decoding), maximum 512 output tokens, and seed 42 for reproducibility. The total experiment comprises 432 API calls (144 cases $\times$ 3 models).
+
+\para{Metrics.} We report two levels of accuracy:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \textbf{Case-level accuracy:} the percentage of test cases where \textit{all} rules are correctly followed.
+    \item \textbf{Rule-level accuracy:} the percentage of individual rule applications that are correct.
+\end{itemize}
+We also report false positive rate ($\fpr = \text{FP} / (\text{FP} + \text{TN})$) and false negative rate ($\fnr = \text{FN} / (\text{FN} + \text{TP})$).
+
+\para{Statistical tests.} We use a $\chi^2$ test for independence to assess whether accuracy depends on condition category. Pairwise model comparisons use McNemar's test on matched case-level outcomes. We test the FP/FN asymmetry with a binomial test against equal proportions. All tests use $\alpha = 0.05$.

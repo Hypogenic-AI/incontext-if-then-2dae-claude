@@ -1,0 +1,657 @@
+{
+  "total_papers": 32,
+  "search_queries_used": [
+    "conditional instruction following language models",
+    "if-then rules large language models",
+    "instruction following evaluation LLM",
+    "constraint following language models",
+    "rule following large language models",
+    "system prompt instruction adherence LLM",
+    "in-context learning conditional rules language models",
+    "instruction following benchmark evaluation LLM complex"
+  ],
+  "search_date": "2026-03-16",
+  "papers": [
+    {
+      "title": "FireBench: Evaluating Instruction Following in Enterprise and API-Driven LLM Applications",
+      "arxiv_id": "2603.04857",
+      "authors": [
+        "Yunfan Zhang",
+        "Yijie Bei",
+        "Jetashree Ravi",
+        "Pawel Garbacki"
+      ],
+      "year": 2026,
+      "abstract": "Instruction following is critical for LLMs deployed in enterprise and API-driven settings, where strict adherence to output formats, content constraints, and procedural requirements is essential for enabling reliable LLM-assisted workflows. However, existing instruction following benchmarks predominantly evaluate natural language generation constraints that reflect the needs of chat assistants rather than enterprise users. To bridge this gap, we introduce FireBench, an LLM instruction following benchmark grounded in real-world enterprise and API usage patterns. FireBench evaluates six core capability dimensions across diverse applications including information extraction, customer support, and coding agents, comprising over 2,400 samples.",
+      "url": "https://arxiv.org/abs/2603.04857",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "IF-RewardBench: Benchmarking Judge Models for Instruction-Following Evaluation",
+      "arxiv_id": "2603.04738",
+      "authors": [
+        "Bosi Wen",
+        "Yilin Niu",
+        "Cunxiang Wang",
+        "Xiaoying Ling",
+        "Ying Zhang",
+        "Pei Ke",
+        "Hongning Wang",
+        "Minlie Huang"
+      ],
+      "year": 2026,
+      "abstract": "Instruction-following is a foundational capability of large language models (LLMs), with its improvement hinging on scalable and accurate feedback from judge models. However, the reliability of current judge models in instruction-following remains underexplored due to several deficiencies of existing meta-evaluation benchmarks, such as their insufficient data coverage and oversimplified pairwise evaluation paradigms that misalign with model optimization scenarios. To this end, we propose IF-RewardBench, a comprehensive meta-evaluation benchmark for instruction-following that covers diverse instruction and constraint types.",
+      "url": "https://arxiv.org/abs/2603.04738",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "Neuro-Symbolic Verification on Instruction Following of LLMs",
+      "arxiv_id": "2601.17789",
+      "authors": [
+        "Yiming Su",
+        "Kunzhao Xu",
+        "Yanjie Gao",
+        "Fan Yang",
+        "Cheng Li",
+        "Mao Yang",
+        "Tianyin Xu"
+      ],
+      "year": 2026,
+      "abstract": "A fundamental problem of applying Large Language Models (LLMs) to important applications is that LLMs do not always follow instructions, and violations are often hard to observe or check. In LLM-based agentic workflows, such violations can propagate and amplify along reasoning chains, causing task failures and system incidents. This paper presents NSVIF, a neuro-symbolic framework for verifying whether an LLM's output follows the instructions used to prompt the LLM. NSVIF formulates instruction-following verification as a constraint-satisfaction problem by modeling user instructions as constraints. NSVIF models both logical and semantic constraints; constraint solving is done by a unified solver that orchestrates logical reasoning and semantic analysis. Experiments show that NSVIF significantly outperforms LLM-based approaches and provides interpretable feedback.",
+      "url": "https://arxiv.org/abs/2601.17789",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "The Instruction Gap: LLMs get lost in Following Instruction",
+      "arxiv_id": "2601.03269",
+      "authors": [
+        "Vishesh Tripathi",
+        "Uday Allu",
+        "Biddwan Ahmed"
+      ],
+      "year": 2025,
+      "abstract": "Large Language Models (LLMs) have shown remarkable capabilities in natural language understanding and generation, yet their deployment in enterprise environments reveals a critical limitation: inconsistent adherence to custom instructions. This study presents a comprehensive evaluation of 13 leading LLMs across instruction compliance, response accuracy, and performance metrics in real-world RAG (Retrieval-Augmented Generation) scenarios. Through systematic testing with samples and enterprise-grade evaluation protocols, we demonstrate that instruction following varies dramatically across models, with Claude-Sonnet-4 and GPT-5 achieving the highest results. Our findings reveal the 'instruction gap' - a fundamental challenge where models excel at general tasks but struggle with precise instruction adherence required for enterprise deployment.",
+      "url": "https://arxiv.org/abs/2601.03269",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "The Stability Trap: Evaluating the Reliability of LLM-Based Instruction Adherence Auditing",
+      "arxiv_id": "2601.11783",
+      "authors": [
+        "Murtuza N. Shergadwala"
+      ],
+      "year": 2026,
+      "abstract": "The enterprise governance of Generative AI (GenAI) in regulated sectors, such as Human Resources (HR), demands scalable yet reproducible auditing mechanisms. While Large Language Model (LLM)-as-a-Judge approaches offer scalability, their reliability in evaluating adherence of different types of system instructions remains unverified. This study asks: To what extent does the instruction type of an Application Under Test (AUT) influence the stability of judge evaluations? To address this, we introduce the Scoped Instruction Decomposition Framework to classify AUT instructions into Objective and Subjective types, isolating the factors that drive judge instability. We applied this framework to two representative HR GenAI applications, evaluating the stability of four judge architectures over variable runs. Our results reveal a 'Stability Trap' characterized by a divergence between Verdict Stability and Reasoning Stability.",
+      "url": "https://arxiv.org/abs/2601.11783",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "matched_query": "system prompt instruction adherence LLM"
+    },
+    {
+      "title": "AdvancedIF: Rubric-Based Benchmarking and Reinforcement Learning for Advancing LLM Instruction Following",
+      "arxiv_id": "2511.10507",
+      "authors": [
+        "Yun He",
+        "Wenzhe Li",
+        "Hejia Zhang",
+        "Songlin Li",
+        "Karishma Mandyam",
+        "Sopan Khosla",
+        "Yuanhao Xiong",
+        "Nanshu Wang",
+        "Xiaoliang Peng",
+        "Beibin Li",
+        "Shengjie Bi",
+        "Shishir G. Patil",
+        "Qi Qi",
+        "Shengyu Feng",
+        "Julian Katz-Samuels",
+        "Richard Yuanzhe Pang",
+        "Sujan Gonugondla",
+        "Hunter Lang",
+        "Yue Yu",
+        "Yundi Qian",
+        "Maryam Fazel-Zarandi",
+        "Licheng Yu",
+        "Amine Benhalloum",
+        "Hany Awadalla",
+        "Manaal Faruqui"
+      ],
+      "year": 2025,
+      "abstract": "Recent progress in large language models (LLMs) has led to impressive performance on a range of tasks, yet advanced instruction following (IF) - especially for complex, multi-turn, and system-prompted instructions - remains a significant challenge. Rigorous evaluation and effective training for such capabilities are hindered by the lack of high-quality, human-annotated benchmarks and reliable, interpretable reward signals. In this work, we introduce AdvancedIF, a comprehensive benchmark featuring over 1,600 prompts and expert-curated rubrics that assess LLMs ability to follow complex, multi-turn, and system-level instructions. We further propose RIFL (Rubric-based Instruction-Following Learning), a novel post-training pipeline that leverages rubric generation, a finetuned rubric verifier, and reward shaping to enable effective reinforcement learning for instruction following.",
+      "url": "https://arxiv.org/abs/2511.10507",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "Attentive Reasoning Queries: A Systematic Method for Optimizing Instruction-Following in Large Language Models",
+      "arxiv_id": "2503.03669",
+      "authors": [
+        "Bar Karov",
+        "Dor Zohar",
+        "Yam Marcovitz"
+      ],
+      "year": 2025,
+      "abstract": "Introduces ARQs framework using structured reasoning blueprints achieving 90.2% success in complex scenarios, outperforming Chain-of-Thought and direct generation.",
+      "url": "https://arxiv.org/abs/2503.03669",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "conditional instruction following language models"
+    },
+    {
+      "title": "Can Language Models Follow Multiple Turns of Entangled Instructions?",
+      "arxiv_id": "2503.13222",
+      "authors": [
+        "Chi Han",
+        "Xin Liu",
+        "Haodong Wang",
+        "Shiyang Li",
+        "Jingfeng Yang",
+        "Haoming Jiang",
+        "Zhengyang Wang",
+        "Qingyu Yin",
+        "Liang Qiu",
+        "Changlong Yu",
+        "Yifan Gao",
+        "Zheng Li",
+        "Bing Yin",
+        "Jingbo Shang",
+        "Heng Ji"
+      ],
+      "year": 2025,
+      "abstract": "Systematically investigates multi-turn instruction handling revealing trade-offs between memorization and privacy protection, with models struggling to resolve conflicting instructions.",
+      "url": "https://arxiv.org/abs/2503.13222",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "conditional instruction following language models"
+    },
+    {
+      "title": "DMN-Guided Prompting: A Framework for Controlling LLM Behavior",
+      "arxiv_id": "2505.11701",
+      "authors": [
+        "Shaghayegh Abedi",
+        "Amin Jalali"
+      ],
+      "year": 2025,
+      "abstract": "Large Language Models (LLMs) have shown considerable potential in automating decision logic within knowledge-intensive processes. However, their effectiveness largely depends on the strategy and quality of prompting. Since decision logic is typically embedded in prompts, it becomes challenging for end users to modify or refine it. Decision Model and Notation (DMN) offers a standardized graphical approach for defining decision logic in a structured, user-friendly manner. This paper introduces a DMN-guided prompting framework that breaks down complex decision logic into smaller, manageable components, guiding LLMs through structured decision pathways.",
+      "url": "https://arxiv.org/abs/2505.11701",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "matched_query": "rule following large language models"
+    },
+    {
+      "title": "IF-CRITIC: Towards a Fine-Grained LLM Critic for Instruction-Following Evaluation",
+      "arxiv_id": "2511.01014",
+      "authors": [
+        "Bosi Wen",
+        "Yilin Niu",
+        "Cunxiang Wang",
+        "Pei Ke",
+        "Xiaoying Ling",
+        "Ying Zhang",
+        "Aohan Zeng",
+        "Hongning Wang",
+        "Minlie Huang"
+      ],
+      "year": 2025,
+      "abstract": "Instruction-following is a fundamental ability of Large Language Models (LLMs), requiring their generated outputs to follow multiple constraints imposed in input instructions. Numerous studies have attempted to enhance this ability through preference optimization or reinforcement learning based on reward signals from LLM-as-a-Judge. However, existing evaluation models for instruction-following still possess many deficiencies, such as substantial costs and unreliable assessments. To this end, we propose IF-CRITIC, an LLM critic for fine-grained, efficient, and reliable instruction-following evaluation. We first develop a checklist generator to decompose instructions and generate constraint checklists. Extensive experiments show that the evaluation performance of IF-CRITIC can beat strong LLM-as-a-Judge baselines, including o4-mini and Gemini-3-Pro.",
+      "url": "https://arxiv.org/abs/2511.01014",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "M-IFEval: Multilingual Instruction-Following Evaluation",
+      "arxiv_id": "2502.04688",
+      "authors": [
+        "Antoine Dussolle",
+        "Andrea Carde\u00f1a D\u00edaz",
+        "Shota Sato",
+        "Peter Devine"
+      ],
+      "year": 2025,
+      "abstract": "Instruction following is a core capability of modern Large language models (LLMs), making evaluating this capability essential to understanding these models. The Instruction Following Evaluation (IFEval) benchmark from the literature does this using objective criteria, offering a measure of LLM performance without subjective AI or human judgement. However, it only includes English instructions, limiting its ability to assess LLMs in other languages. We propose the Multilingual Instruction Following Evaluation (M-IFEval) benchmark, expanding the evaluation to French, Japanese, and Spanish, with both general and language-specific instructions.",
+      "url": "https://arxiv.org/abs/2502.04688",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "SAIF: A Sparse Autoencoder Framework for Interpreting and Steering Instruction Following of Language Models",
+      "arxiv_id": "2502.11356",
+      "authors": [
+        "Zirui He",
+        "Haiyan Zhao",
+        "Yiran Qiao",
+        "Fan Yang",
+        "Ali Payani",
+        "Jing Ma",
+        "Mengnan Du"
+      ],
+      "year": 2025,
+      "abstract": "Uses sparse autoencoders to identify and interpret instruction-relevant features in LLMs, demonstrating effective steering mechanisms for aligning model outputs.",
+      "url": "https://arxiv.org/abs/2502.11356",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "conditional instruction following language models"
+    },
+    {
+      "title": "TOD-ProcBench: Benchmarking Complex Instruction-Following in Task-Oriented Dialogues",
+      "arxiv_id": "2511.15976",
+      "authors": [
+        "Sarik Ghazarian",
+        "Abhinav Gullapalli",
+        "Swair Shah",
+        "Anurag Beniwal",
+        "Nanyun Peng",
+        "Narayanan Sadagopan",
+        "Zhou Yu"
+      ],
+      "year": 2025,
+      "abstract": "In real-world task-oriented dialogue (TOD) settings, agents are required to strictly adhere to complex instructions while conducting multi-turn conversations with customers. These instructions are typically presented in natural language format and include general guidelines and step-by-step procedures with complex constraints. Existing TOD benchmarks often oversimplify the complex nature of these instructions by reducing them to simple schemas composed of intents, slots, and API call configurations. To address this gap and systematically benchmark LLMs' instruction-following capabilities, we propose TOD-ProcBench, a challenging benchmark featuring complex process instructions with intricate, fine-grained constraints that evaluates various LLMs' abilities to understand and follow instructions in multi-turn TODs. Our benchmark dataset comprises instruction documents derived from the high-quality ABCD dataset with corresponding conversations under human quality control. We formulate fine-grained constraints and action procedures as multi-level condition-action instruction statements.",
+      "url": "https://arxiv.org/abs/2511.15976",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "constraint following language models"
+    },
+    {
+      "title": "The Impact of Role Design in In-Context Learning for Large Language Models",
+      "arxiv_id": "2509.23501",
+      "authors": [
+        "Hamidreza Rouzegar",
+        "Masoud Makrehchi"
+      ],
+      "year": 2025,
+      "abstract": "In-context learning (ICL) enables Large Language Models (LLMs) to generate predictions based on prompts without additional fine-tuning. While prompt engineering has been widely studied, the impact of role design within prompts remains underexplored. This study examines the influence of role configurations in zero-shot and few-shot learning scenarios using GPT-3.5 and GPT-4o from OpenAI and Llama2-7b and Llama2-13b from Meta. We evaluate the models' performance across datasets, focusing on tasks like sentiment analysis, text classification, question answering, and math reasoning.",
+      "url": "https://arxiv.org/abs/2509.23501",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "in-context learning conditional rules language models"
+    },
+    {
+      "title": "When Models Can't Follow: Testing Instruction Adherence Across 256 LLMs",
+      "arxiv_id": "2510.18892",
+      "authors": [
+        "Richard J. Young",
+        "Brandon Gillins",
+        "Alice M. Matthews"
+      ],
+      "year": 2025,
+      "abstract": "Despite widespread deployment of Large Language Models, systematic evaluation of instruction-following capabilities remains challenging. While comprehensive benchmarks exist, focused assessments that quickly diagnose specific instruction adherence patterns are valuable. As newer models may be trained on existing benchmarks, novel evaluation approaches are needed to assess genuine capabilities rather than memorized performance. This paper presents a streamlined evaluation framework using twenty carefully designed prompts to assess LLM instruction-following across diverse task categories. We demonstrate this framework through a large-scale empirical study conducted on October 14, 2025, testing 256 verified working models from 331 available via OpenRouter. To ensure methodological rigor and prevent selection bias, we first verified each model's basic functionality before inclusion. Unlike large-scale benchmarks requiring extensive computational resources, our approach offers a practical diagnostic tool researchers and practitioners can readily apply. Our methodology builds upon verifiable instructions while introducing a compact test suite balancing comprehensiveness with efficiency. Each prompt targets distinct aspects of instruction following, including format compliance, content constraints, logical sequencing, and multi-step task execution. We evaluate models from major providers (OpenAI, Anthropic, Google, Meta, Mistral) and emerging implementations (Qwen, DeepSeek, community models), providing comparative performance analysis. Our findings reveal consistent failure modes and identify specific instruction types posing particular challenges.",
+      "url": "https://arxiv.org/abs/2510.18892",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "matched_query": "system prompt instruction adherence LLM"
+    },
+    {
+      "title": "An Incomplete Loop: Instruction Inference, Instruction Following, and In-context Learning in Language Models",
+      "arxiv_id": "2404.03028",
+      "authors": [
+        "Emmy Liu",
+        "Graham Neubig",
+        "Jacob Andreas"
+      ],
+      "year": 2024,
+      "abstract": "Reveals dissociation between instruction following, few-shot learning, and inference, showing models can succeed with examples while failing with human-written descriptions.",
+      "url": "https://arxiv.org/abs/2404.03028",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "conditional instruction following language models"
+    },
+    {
+      "title": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "arxiv_id": "2407.03978",
+      "authors": [
+        "Bosi Wen",
+        "Pei Ke",
+        "Xiaotao Gu",
+        "Lindong Wu",
+        "Hao Huang",
+        "Jinfeng Zhou",
+        "Wenchuang Li",
+        "Binxin Hu",
+        "Wendy Gao",
+        "Jiaxin Xu",
+        "Yiming Liu",
+        "Jie Tang",
+        "Hongning Wang",
+        "Minlie Huang"
+      ],
+      "year": 2024,
+      "abstract": "Instruction following is one of the fundamental capabilities of large language models (LLMs). As the ability of LLMs is constantly improving, they have been increasingly applied to deal with complex human instructions in real-world scenarios. Therefore, how to evaluate the ability of complex instruction-following of LLMs has become a critical research problem. Existing benchmarks mainly focus on modeling different types of constraints in human instructions while neglecting the composition of different constraints, which is an indispensable constituent in complex instructions. To this end, we propose ComplexBench, a benchmark for comprehensively evaluating the ability of LLMs to follow complex instructions composed of multiple constraints. We propose a hierarchical taxonomy for complex instructions, including 4 constraint types, 19 constraint dimensions, and 4 composition types, and manually collect a high-quality dataset accordingly. To make the evaluation reliable, we augment LLM-based evaluators with rules to effectively verify whether generated texts can satisfy each constraint and composition.",
+      "url": "https://arxiv.org/abs/2407.03978",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "constraint following language models"
+    },
+    {
+      "title": "CoPrompter: User-Centric Evaluation of LLM Instruction Alignment for Improved Prompt Engineering",
+      "arxiv_id": "2411.06099",
+      "authors": [
+        "Ishika Joshi",
+        "Simra Shahid",
+        "Shreeya Venneti",
+        "Manushree Vasu",
+        "Yantao Zheng",
+        "Yunyao Li",
+        "Balaji Krishnamurthy",
+        "Gromit Yeuk-Yin Chan"
+      ],
+      "year": 2024,
+      "abstract": "Ensuring large language models' (LLMs) responses align with prompt instructions is crucial for application development. Based on our formative study with industry professionals, the alignment requires heavy human involvement and tedious trial-and-error especially when there are many instructions in the prompt. To address these challenges, we introduce CoPrompter, a framework that identifies misalignment based on assessing multiple LLM responses with criteria. It proposes a method to generate evaluation criteria questions derived directly from prompt requirements and an interface to turn these questions into a user-editable checklist.",
+      "url": "https://arxiv.org/abs/2411.06099",
+      "categories": [
+        "cs.HC",
+        "cs.CL"
+      ],
+      "matched_query": "system prompt instruction adherence LLM"
+    },
+    {
+      "title": "Combining Constraint Programming Reasoning with Large Language Model Predictions",
+      "arxiv_id": "2407.13490",
+      "authors": [
+        "Florian R\u00e9gin",
+        "Elisabetta De Maria",
+        "Alexandre Bonlarron"
+      ],
+      "year": 2024,
+      "abstract": "Constraint Programming (CP) and Machine Learning (ML) face challenges in text generation due to CP's struggle with implementing meaning and ML's difficulty with structural constraints. This paper proposes a solution by combining both approaches and embedding a Large Language Model (LLM) in CP. The LLM handles word generation and meaning, while CP manages structural constraints. This approach builds on GenCP, an improved version of On-the-fly Constraint Programming Search (OTFS) using LLM-generated domains. Compared to Beam Search (BS), a standard NLP method, this combined approach (GenCP with LLM) is faster and produces better results, ensuring all constraints are satisfied. This fusion of CP and ML presents new possibilities for enhancing text generation under constraints.",
+      "url": "https://arxiv.org/abs/2407.13490",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "matched_query": "constraint following language models"
+    },
+    {
+      "title": "Conditional Language Learning with Context",
+      "arxiv_id": "2406.01976",
+      "authors": [
+        "Xiao Zhang",
+        "Miao Li",
+        "Ji Wu"
+      ],
+      "year": 2024,
+      "abstract": "Language models can learn sophisticated language understanding skills from fitting raw text. They also unselectively learn useless corpus statistics and biases, especially during finetuning on domain-specific corpora. In this paper, we propose a simple modification to causal language modeling called conditional finetuning, which performs language modeling conditioned on a context. We show that a context can 'explain away' certain corpus statistics and make the model avoid learning them. In this fashion, conditional finetuning achieves selective learning from a corpus, learning knowledge useful for downstream tasks while avoiding learning useless corpus statistics like topic biases.",
+      "url": "https://arxiv.org/abs/2406.01976",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "in-context learning conditional rules language models"
+    },
+    {
+      "title": "Is In-Context Learning Sufficient for Instruction Following in LLMs?",
+      "arxiv_id": "2405.19874",
+      "authors": [
+        "Hao Zhao",
+        "Maksym Andriushchenko",
+        "Francesco Croce",
+        "Nicolas Flammarion"
+      ],
+      "year": 2024,
+      "abstract": "In-context learning (ICL) allows LLMs to learn from examples without changing their weights: this is a particularly promising capability for long-context LLMs that can potentially learn from many examples. Recently, Lin et al. (2024) proposed URIAL, a method using only three in-context examples to align base LLMs, achieving non-trivial instruction following performance. In this work, we show that, while effective, ICL alignment with URIAL still underperforms compared to instruction fine-tuning on the established benchmark MT-Bench, especially with more capable base LLMs. We then uncover the most relevant elements for successful in-context alignment, finding the crucial role of the decoding parameters. Based on these insights, we show that the approach of URIAL can indeed be improved by adding high-quality, potentially carefully selected via greedy search, demonstrations in context, getting closer to the performance of instruct models. Finally, we provide the first, to our knowledge, systematic comparison of ICL and instruction fine-tuning (IFT) for instruction following in the low data regime, where ICL can be a viable alternative to IFT.",
+      "url": "https://arxiv.org/abs/2405.19874",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "matched_query": "conditional instruction following language models"
+    },
+    {
+      "title": "Multi-IF: Benchmarking LLMs on Multi-Turn and Multilingual Instructions Following",
+      "arxiv_id": "2410.15553",
+      "authors": [
+        "Yun He",
+        "Di Jin",
+        "Chaoqi Wang",
+        "Chloe Bi",
+        "Karishma Mandyam",
+        "Hejia Zhang",
+        "Chen Zhu",
+        "Ning Li",
+        "Tengyu Xu",
+        "Hongjiang Lv",
+        "Shruti Bhosale",
+        "Chenguang Zhu",
+        "Karthik Abinav Sankararaman",
+        "Eryk Helenowski",
+        "Melanie Kambadur",
+        "Aditya Tayade",
+        "Hao Ma",
+        "Han Fang",
+        "Sinong Wang"
+      ],
+      "year": 2024,
+      "abstract": "Large Language Models (LLMs) have demonstrated impressive capabilities in various tasks, including instruction following, which is crucial for aligning model outputs with user expectations. However, evaluating LLMs' ability to follow instructions remains challenging due to the complexity and subjectivity of human language. Current benchmarks primarily focus on single-turn, monolingual instructions, which do not adequately reflect the complexities of real-world applications that require handling multi-turn and multilingual interactions. To address this gap, we introduce Multi-IF, a new benchmark designed to assess LLMs' proficiency in following multi-turn and multilingual instructions. Our evaluation of 14 state-of-the-art LLMs on Multi-IF reveals that all models show a higher rate of failure in executing instructions correctly with each additional turn.",
+      "url": "https://arxiv.org/abs/2410.15553",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "ReIFE: Re-evaluating Instruction-Following Evaluation",
+      "arxiv_id": "2410.07069",
+      "authors": [
+        "Yixin Liu",
+        "Kejian Shi",
+        "Alexander R. Fabbri",
+        "Yilun Zhao",
+        "Peifeng Wang",
+        "Chien-Sheng Wu",
+        "Shafiq Joty",
+        "Arman Cohan"
+      ],
+      "year": 2024,
+      "abstract": "The automatic evaluation of instruction following typically involves using large language models (LLMs) to assess response quality. However, there is a lack of comprehensive evaluation of these LLM-based evaluators across two dimensions: the base LLMs and the evaluation protocols. Therefore, we present a thorough meta-evaluation of instruction following, including 25 base LLMs and 15 recently proposed evaluation protocols, on 4 human-annotated datasets, assessing the evaluation accuracy of the LLM-evaluators.",
+      "url": "https://arxiv.org/abs/2410.07069",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "SecAlign: Defending Against Prompt Injection with Preference Optimization",
+      "arxiv_id": "2410.05451",
+      "authors": [
+        "Sizhe Chen",
+        "Arman Zharmagambetov",
+        "Saeed Mahloujifar",
+        "Kamalika Chaudhuri",
+        "David Wagner",
+        "Chuan Guo"
+      ],
+      "year": 2024,
+      "abstract": "Large language models (LLMs) are becoming increasingly prevalent in modern software systems, interfacing between the user and the Internet to assist with tasks that require advanced language understanding. To accomplish these tasks, the LLM often uses external data sources such as user documents, web retrieval, results from API calls, etc. This opens up new avenues for attackers to manipulate the LLM via prompt injection. Adversarial prompts can be injected into external data sources to override the system's intended instruction and instead execute a malicious instruction. To mitigate this vulnerability, we propose a new defense called SecAlign based on the technique of preference optimization.",
+      "url": "https://arxiv.org/abs/2410.05451",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "matched_query": "system prompt instruction adherence LLM"
+    },
+    {
+      "title": "StruQ: Defending Against Prompt Injection with Structured Queries",
+      "arxiv_id": "2402.06363",
+      "authors": [
+        "Sizhe Chen",
+        "Julien Piet",
+        "Chawin Sitawarin",
+        "David Wagner"
+      ],
+      "year": 2024,
+      "abstract": "Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the model into deviating from the original application's instructions and instead follow user directives. These attacks rely on the LLM's ability to follow instructions and inability to separate prompts and user data. We introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts and data into two channels. We implement a system that supports structured queries. This system is made of (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially trained LLM that can produce high-quality outputs from these inputs. The LLM is trained using a novel fine-tuning strategy: we convert a base (non-instruction-tuned) LLM to a structured instruction-tuned model that will only follow instructions in the prompt portion of a query.",
+      "url": "https://arxiv.org/abs/2402.06363",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "matched_query": "system prompt instruction adherence LLM"
+    },
+    {
+      "title": "The SIFo Benchmark: Investigating the Sequential Instruction Following Ability of Large Language Models",
+      "arxiv_id": "2406.19999",
+      "authors": [
+        "Xinyi Chen",
+        "Baohao Liao",
+        "Jirui Qi",
+        "Panagiotis Eustratiadis",
+        "Christof Monz",
+        "Arianna Bisazza",
+        "Maarten de Rijke"
+      ],
+      "year": 2024,
+      "abstract": "Develops SIFo benchmark evaluating sequential instruction following across text modification, QA, mathematics, and security tasks, revealing model robustness gaps.",
+      "url": "https://arxiv.org/abs/2406.19999",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "Benchmarking Generation and Evaluation Capabilities of Large Language Models for Instruction Controllable Summarization",
+      "arxiv_id": "2311.09184",
+      "authors": [
+        "Yixin Liu",
+        "Alexander R. Fabbri",
+        "Jiawen Chen",
+        "Yilun Zhao",
+        "Simeng Han",
+        "Shafiq Joty",
+        "Pengfei Liu",
+        "Dragomir Radev",
+        "Chien-Sheng Wu",
+        "Arman Cohan"
+      ],
+      "year": 2023,
+      "abstract": "While large language models (LLMs) can already achieve strong performance on standard generic summarization benchmarks, their performance on more complex summarization task settings is less studied. Therefore, we benchmark LLMs on instruction controllable text summarization, where the model input consists of both a source article and a natural language requirement for desired summary characteristics. Our study reveals that instruction controllable text summarization remains a challenging task for LLMs, since all LLMs evaluated still make factual and other types of errors in their summaries.",
+      "url": "https://arxiv.org/abs/2311.09184",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "Evaluating Large Language Models at Evaluating Instruction Following",
+      "arxiv_id": "2310.07641",
+      "authors": [
+        "Zhiyuan Zeng",
+        "Jiatong Yu",
+        "Tianyu Gao",
+        "Yu Meng",
+        "Tanya Goyal",
+        "Danqi Chen"
+      ],
+      "year": 2023,
+      "abstract": "As research in large language models (LLMs) continues to accelerate, LLM-based evaluation has emerged as a scalable and cost-effective alternative to human evaluations for comparing models. This paper investigates the efficacy of these 'LLM evaluators', particularly in using them to assess instruction following, a metric that gauges how closely generated text adheres to the given instruction. We introduce a challenging meta-evaluation benchmark, LLMBar, designed to test the ability of an LLM evaluator in discerning instruction-following outputs. The authors manually curated 419 pairs of outputs, one adhering to instructions while the other diverging, yet may possess deceptive qualities that mislead an LLM evaluator. We discover that different evaluators exhibit distinct performance on LLMBar and even the highest-scoring ones have substantial room for improvement.",
+      "url": "https://arxiv.org/abs/2310.07641",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "Evaluating the Instruction-Following Robustness of Large Language Models to Prompt Injection",
+      "arxiv_id": "2308.10819",
+      "authors": [
+        "Zekun Li",
+        "Baolin Peng",
+        "Pengcheng He",
+        "Xifeng Yan"
+      ],
+      "year": 2023,
+      "abstract": "Large Language Models (LLMs) have demonstrated exceptional proficiency in instruction-following, becoming increasingly crucial across various applications. However, this capability brings with it the risk of prompt injection attacks, where attackers inject instructions into LLMs' input to elicit undesirable actions or content. Understanding the robustness of LLMs against such attacks is vital for their safe implementation. In this work, we establish a benchmark to evaluate the robustness of instruction-following LLMs against prompt injection attacks. Our objective is to determine the extent to which LLMs can be influenced by injected instructions and their ability to differentiate between these injected and original target instructions. Through extensive experiments with leading instruction-following LLMs, we uncover significant vulnerabilities in their robustness to such attacks. Our results indicate that some models are overly tuned to follow any embedded instructions in the prompt, overly focusing on the latter parts of the prompt without fully grasping the entire context.",
+      "url": "https://arxiv.org/abs/2308.10819",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "instruction following evaluation LLM"
+    },
+    {
+      "title": "Large Language Model Instruction Following: A Survey of Progresses and Challenges",
+      "arxiv_id": "2303.10475",
+      "authors": [
+        "Renze Lou",
+        "Kai Zhang",
+        "Wenpeng Yin"
+      ],
+      "year": 2023,
+      "abstract": "Task semantics can be expressed by a set of input-output examples or a piece of textual instruction. Conventional machine learning approaches for natural language processing (NLP) mainly rely on the availability of large-scale sets of task-specific examples. Two issues arise: first, collecting task-specific labeled examples does not apply to scenarios where tasks may be too complicated or costly to annotate, or the system is required to handle a new task immediately; second, this is not user-friendly since end-users are probably more willing to provide task description rather than a set of examples before using the system. Therefore, the community is paying increasing interest in a new supervision-seeking paradigm for NLP: learning to follow task instructions, i.e., instruction following. Despite its impressive progress, there are some common issues that the community struggles with. This survey paper tries to summarize and provide insights to the current research on instruction following, particularly, by answering the following questions: (i) What is task instruction, and what instruction types exist? (ii) How to model instructions? (iii) What are popular instruction following datasets and evaluation metrics? (iv) What factors influence and explain the instructions' performance? (v) What challenges remain in instruction following? To our knowledge, this is the first comprehensive survey about instruction following.",
+      "url": "https://arxiv.org/abs/2303.10475",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "conditional instruction following language models"
+    },
+    {
+      "title": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+      "arxiv_id": "2304.12244",
+      "authors": [
+        "Can Xu",
+        "Qingfeng Sun",
+        "Kai Zheng",
+        "Xiubo Geng",
+        "Pu Zhao",
+        "Jiazhan Feng",
+        "Chongyang Tao",
+        "Qingwei Lin",
+        "Daxin Jiang"
+      ],
+      "year": 2023,
+      "abstract": "Training large language models (LLMs) with open-domain instruction following data brings colossal success. However, manually creating such instruction data is very time-consuming and labor-intensive. Moreover, humans may struggle to produce high-complexity instructions. In this paper, we show an avenue for creating large amounts of instruction data with varying levels of complexity using LLM instead of humans. Starting with an initial set of instructions, we use our proposed Evol-Instruct to rewrite them step by step into more complex instructions. Then, we mix all generated instruction data to fine-tune LLaMA.",
+      "url": "https://arxiv.org/abs/2304.12244",
+      "categories": [
+        "cs.CL"
+      ],
+      "matched_query": "conditional instruction following language models"
+    },
+    {
+      "title": "RuleBert: Teaching Soft Rules to Pre-trained Language Models",
+      "arxiv_id": "2109.13006",
+      "authors": [
+        "Mohammed Saeed",
+        "Naser Ahmadi",
+        "Preslav Nakov",
+        "Paolo Papotti"
+      ],
+      "year": 2021,
+      "abstract": "While pre-trained language models (PLMs) are the go-to solution to tackle many natural language processing problems, they are still very limited in their ability to capture and to use common-sense knowledge. In fact, even if information is available in the form of approximate (soft) logical rules, it is not clear how to transfer it to a PLM in order to improve its performance for deductive reasoning tasks. Here, we aim to bridge this gap by teaching PLMs how to reason with soft Horn rules. We introduce a classification task where, given facts and soft rules, the PLM should return a prediction with a probability for a given hypothesis. We release the first dataset for this task, and we propose a revised loss function that enables the PLM to learn how to predict precise probabilities for the task. Our evaluation results show that the resulting fine-tuned models achieve very high performance, even on logical rules that were unseen at training. Moreover, we demonstrate that logical notions expressed by the rules are transferred to the fine-tuned model, yielding state-of-the-art results on external datasets.",
+      "url": "https://arxiv.org/abs/2109.13006",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "matched_query": "if-then rules large language models"
+    }
+  ]
+}

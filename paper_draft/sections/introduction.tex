@@ -1,0 +1,24 @@
+\section{Introduction}
+\label{sec:intro}
+
+When you tell a language model ``if the user asks about refunds, follow policy X,'' how reliably does it actually follow that rule? As LLMs move from open-ended chatbots into structured workflows---customer service automation, content moderation, agentic pipelines---their ability to follow conditional instructions becomes load-bearing infrastructure. A false positive (the refund policy triggers on a billing question) wastes time; a false negative (the policy fails to trigger on a refund request) violates procedure. Understanding where and how these failures occur is essential for deploying LLMs in production systems.
+
+\para{The gap.} Existing instruction-following benchmarks test important but orthogonal capabilities. IFEval~\cite{zhou2023ifeval} measures adherence to unconditional constraints such as keyword inclusion and format requirements. ComplexBench~\cite{wen2024complexbench} introduces a ``Selection'' composition type that tests if-then-else branching but bundles it with broader evaluation across multiple constraint types. TOD-ProcBench~\cite{ghazarian2025todprocbench} evaluates condition-action pairs but only within customer service dialogues. No existing benchmark systematically isolates in-context if-then capacity---the ability to correctly trigger or suppress a rule based on whether a specified condition holds---across different condition types, with deterministic verification of both false positive and false negative rates.
+
+\para{Our approach.} We introduce \benchname, a benchmark of 144 test cases across 7 condition categories designed to measure in-context if-then capacity. Each test case embeds one or more conditional rules in a system prompt (e.g., ``if the user mentions `Python,' include \texttt{[[SIGNAL\_0]]} in your response'') and pairs it with a user message that either does or does not satisfy the condition. Verification is fully deterministic: we check for the presence or absence of distinctive marker strings, requiring no LLM judge. This design enables precise measurement of true positives, true negatives, false positives, and false negatives for each condition type.
+
+We evaluate three models from the GPT-4.1 family---large, mini, and nano---to isolate the effect of model capacity on conditional instruction following while controlling for architecture and training methodology.
+
+\para{Key findings.} Our experiments reveal three main results:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \textbf{Accuracy varies significantly by condition type.} For all three models, a $\chi^2$ test rejects independence between condition category and accuracy ($p < 0.002$). Sustained/adversarial conditions are hardest (42.9--78.6\%), while if-then-else branching is easiest (90--100\%).
+    \item \textbf{False positives dominate false negatives.} Across all models, the ratio of false positives to false negatives is 2.83:1 ($p < 0.001$, binomial test). Models are biased toward over-triggering conditional rules rather than failing to trigger them.
+    \item \textbf{Model size strongly predicts performance.} \gptlarge achieves 97.2\% case-level accuracy versus 87.5\% for \gptmini and 68.1\% for \gptnano, with all pairwise differences significant (McNemar's test, $p < 0.001$).
+\end{itemize}
+
+\para{Contributions.} We make the following contributions:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We propose \benchname, the first benchmark that systematically isolates in-context if-then capacity across 7 condition categories with deterministic verification.
+    \item We conduct controlled experiments across 3 model sizes, providing the first fine-grained characterization of conditional instruction-following failures by condition type.
+    \item We identify a systematic false-positive bias in conditional instruction following, where models over-trigger rules at nearly 3$\times$ the rate they under-trigger them---a finding with direct implications for system-prompt design.
+\end{itemize}

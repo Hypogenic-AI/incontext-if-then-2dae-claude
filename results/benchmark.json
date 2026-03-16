@@ -1,0 +1,1754 @@
+[
+  {
+    "case_id": "content_trigger_0",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Tell me about the best breeds of dogs for families.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'dogs'"
+  },
+  {
+    "case_id": "content_trigger_1",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I love playing fetch with my dogs in the park.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'dogs'"
+  },
+  {
+    "case_id": "content_notrigger_2",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are some creative gift ideas?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'dogs'"
+  },
+  {
+    "case_id": "content_notrigger_3",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Can you help me write a professional email?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'dogs'"
+  },
+  {
+    "case_id": "content_trigger_4",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"weather\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What will the weather be like this weekend?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'weather'"
+  },
+  {
+    "case_id": "content_trigger_5",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"weather\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I heard the weather is going to be stormy tomorrow.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'weather'"
+  },
+  {
+    "case_id": "content_notrigger_6",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"weather\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What should I have for dinner tonight?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'weather'"
+  },
+  {
+    "case_id": "content_notrigger_7",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"weather\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Can you explain how bridges are engineered?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'weather'"
+  },
+  {
+    "case_id": "content_trigger_8",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"cooking\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What's a good recipe for cooking pasta?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'cooking'"
+  },
+  {
+    "case_id": "content_trigger_9",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"cooking\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been cooking a lot more at home lately.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'cooking'"
+  },
+  {
+    "case_id": "content_notrigger_10",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"cooking\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Tell me an interesting fact I probably don't know.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'cooking'"
+  },
+  {
+    "case_id": "content_notrigger_11",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"cooking\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are some good habits to develop?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'cooking'"
+  },
+  {
+    "case_id": "content_trigger_12",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I'm planning some travel to Japan next month.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'travel'"
+  },
+  {
+    "case_id": "content_trigger_13",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the best travel destinations in Europe?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'travel'"
+  },
+  {
+    "case_id": "content_notrigger_14",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are some good habits to develop?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'travel'"
+  },
+  {
+    "case_id": "content_notrigger_15",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Explain the concept of compound interest.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'travel'"
+  },
+  {
+    "case_id": "content_trigger_16",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been listening to a lot of jazz music recently.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'music'"
+  },
+  {
+    "case_id": "content_trigger_17",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the best music festivals this summer?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should trigger: message mentions 'music'"
+  },
+  {
+    "case_id": "content_notrigger_18",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Can you explain how bridges are engineered?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'music'"
+  },
+  {
+    "case_id": "content_notrigger_19",
+    "condition_type": "content",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Can you help me write a professional email?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Should NOT trigger: message doesn't mention 'music'"
+  },
+  {
+    "case_id": "format_trigger_20",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What is the capital of France?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger: message is a question"
+  },
+  {
+    "case_id": "format_trigger_21",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "How do computers process information?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger: message is a question"
+  },
+  {
+    "case_id": "format_trigger_22",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Why is the sky blue?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger: message is a question"
+  },
+  {
+    "case_id": "format_trigger_23",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What causes earthquakes?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger: message is a question"
+  },
+  {
+    "case_id": "format_trigger_24",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "How does the internet work?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger: message is a question"
+  },
+  {
+    "case_id": "format_notrigger_25",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I went to the store yesterday and bought some groceries.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should NOT trigger: message is a statement"
+  },
+  {
+    "case_id": "format_notrigger_26",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "The meeting has been rescheduled to next Thursday at 3pm.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should NOT trigger: message is a statement"
+  },
+  {
+    "case_id": "format_notrigger_27",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I finished reading that book you recommended last week.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should NOT trigger: message is a statement"
+  },
+  {
+    "case_id": "format_notrigger_28",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "My neighbor just adopted a new kitten from the shelter.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should NOT trigger: message is a statement"
+  },
+  {
+    "case_id": "format_notrigger_29",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "The conference was really insightful this year.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should NOT trigger: message is a statement"
+  },
+  {
+    "case_id": "format_trigger_30",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are some creative gift ideas?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger"
+  },
+  {
+    "case_id": "format_trigger_31",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Can you explain how bridges are engineered?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger"
+  },
+  {
+    "case_id": "format_trigger_32",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What's the difference between a meteor and a meteorite?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger"
+  },
+  {
+    "case_id": "format_trigger_33",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Can you help me write a professional email?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger"
+  },
+  {
+    "case_id": "format_trigger_34",
+    "condition_type": "format",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "How does photosynthesis work?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "Should trigger"
+  },
+  {
+    "case_id": "counting_trigger_35",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been thinking a lot lately about how to improve my daily routine and I was wondering if you could give me some detailed advice on morning habits, evening wind-down practices, and how to structure my work breaks throughout the day to maximize productivity.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Should trigger: message has 44 words (>20)"
+  },
+  {
+    "case_id": "counting_trigger_36",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "There are so many options for learning new skills online these days and I'm feeling overwhelmed by the choices available to me so could you help me narrow down what would be most valuable to focus on given that I work in marketing and want to transition to data analysis.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Should trigger: message has 50 words (>20)"
+  },
+  {
+    "case_id": "counting_trigger_37",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "My family is planning a big reunion this summer and we need to coordinate accommodations, activities, meals, and transportation for about thirty people of various ages ranging from toddlers to grandparents, and I'd love some organizational suggestions for making it run smoothly.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Should trigger: message has 42 words (>20)"
+  },
+  {
+    "case_id": "counting_notrigger_38",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Hi there.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Should NOT trigger: message has 2 words (<=20)"
+  },
+  {
+    "case_id": "counting_notrigger_39",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Thanks!",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Should NOT trigger: message has 1 words (<=20)"
+  },
+  {
+    "case_id": "counting_notrigger_40",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "OK, got it.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Should NOT trigger: message has 3 words (<=20)"
+  },
+  {
+    "case_id": "counting_notrigger_41",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Sure, sounds good.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Should NOT trigger: message has 3 words (<=20)"
+  },
+  {
+    "case_id": "counting_notrigger_42",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Tell me more.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Should NOT trigger: message has 3 words (<=20)"
+  },
+  {
+    "case_id": "counting_notrigger_43",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the benefits of meditation?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Message has 6 words"
+  },
+  {
+    "case_id": "counting_notrigger_44",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What should I have for dinner tonight?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Message has 7 words"
+  },
+  {
+    "case_id": "counting_notrigger_45",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "How do airplanes stay in the air?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Message has 7 words"
+  },
+  {
+    "case_id": "counting_notrigger_46",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Can you help me write a professional email?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Message has 8 words"
+  },
+  {
+    "case_id": "counting_notrigger_47",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are some good habits to develop?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Message has 7 words"
+  },
+  {
+    "case_id": "counting_notrigger_48",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are some creative gift ideas?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Message has 6 words"
+  },
+  {
+    "case_id": "counting_notrigger_49",
+    "condition_type": "counting",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What's the difference between a meteor and a meteorite?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "Message has 9 words"
+  },
+  {
+    "case_id": "negation_trigger_50",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"dogs\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "How does photosynthesis work?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'dogs'"
+  },
+  {
+    "case_id": "negation_trigger_51",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"dogs\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What should I have for dinner tonight?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'dogs'"
+  },
+  {
+    "case_id": "negation_notrigger_52",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"dogs\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Tell me about the best breeds of dogs for families.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'dogs'"
+  },
+  {
+    "case_id": "negation_notrigger_53",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"dogs\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I love playing fetch with my dogs in the park.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'dogs'"
+  },
+  {
+    "case_id": "negation_trigger_54",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"weather\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What's the difference between a meteor and a meteorite?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'weather'"
+  },
+  {
+    "case_id": "negation_trigger_55",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"weather\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are some good habits to develop?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'weather'"
+  },
+  {
+    "case_id": "negation_notrigger_56",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"weather\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What will the weather be like this weekend?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'weather'"
+  },
+  {
+    "case_id": "negation_notrigger_57",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"weather\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I heard the weather is going to be stormy tomorrow.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'weather'"
+  },
+  {
+    "case_id": "negation_trigger_58",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Can you explain how bridges are engineered?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'cooking'"
+  },
+  {
+    "case_id": "negation_trigger_59",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are some creative gift ideas?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'cooking'"
+  },
+  {
+    "case_id": "negation_notrigger_60",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What's a good recipe for cooking pasta?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'cooking'"
+  },
+  {
+    "case_id": "negation_notrigger_61",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been cooking a lot more at home lately.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'cooking'"
+  },
+  {
+    "case_id": "negation_trigger_62",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"travel\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Can you explain how bridges are engineered?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'travel'"
+  },
+  {
+    "case_id": "negation_trigger_63",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"travel\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What's the difference between a meteor and a meteorite?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'travel'"
+  },
+  {
+    "case_id": "negation_notrigger_64",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"travel\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I'm planning some travel to Japan next month.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'travel'"
+  },
+  {
+    "case_id": "negation_notrigger_65",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"travel\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the best travel destinations in Europe?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'travel'"
+  },
+  {
+    "case_id": "negation_trigger_66",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"music\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the benefits of meditation?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'music'"
+  },
+  {
+    "case_id": "negation_trigger_67",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"music\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are some good habits to develop?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should trigger: message doesn't mention 'music'"
+  },
+  {
+    "case_id": "negation_notrigger_68",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"music\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been listening to a lot of jazz music recently.",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'music'"
+  },
+  {
+    "case_id": "negation_notrigger_69",
+    "condition_type": "negation",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message does NOT mention \"music\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the best music festivals this summer?",
+    "expected_triggers": [
+      false
+    ],
+    "markers": [
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "Should NOT trigger: message mentions 'music'"
+  },
+  {
+    "case_id": "multi2_0_0",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the best breeds of dogs for apartment living?",
+    "expected_triggers": [
+      true,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "2 rules: content+format"
+  },
+  {
+    "case_id": "multi2_0_1",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I just adopted two new dogs from the shelter last week.",
+    "expected_triggers": [
+      true,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "2 rules: content+format"
+  },
+  {
+    "case_id": "multi2_0_2",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What time does the library close today?",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "2 rules: content+format"
+  },
+  {
+    "case_id": "multi2_0_3",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I went for a walk in the park this morning.",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "2 rules: content+format"
+  },
+  {
+    "case_id": "multi2_0_4",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I'm planning an exciting travel adventure through Southeast Asia next year and I want to visit at least five countries including Thailand Vietnam Cambodia Laos and Myanmar over the course of three months.",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "2 rules: content+format"
+  },
+  {
+    "case_id": "multi2_0_5",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Sounds great, thanks!",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "2 rules: content+format"
+  },
+  {
+    "case_id": "multi2_0_6",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What kind of music do you recommend for studying?",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "2 rules: content+format"
+  },
+  {
+    "case_id": "multi2_0_7",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been watching a lot of sports on TV lately.",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34"
+    ],
+    "verification_notes": "2 rules: content+format"
+  },
+  {
+    "case_id": "multi2_1_8",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the best breeds of dogs for apartment living?",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "2 rules: content+counting"
+  },
+  {
+    "case_id": "multi2_1_9",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I just adopted two new dogs from the shelter last week.",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "2 rules: content+counting"
+  },
+  {
+    "case_id": "multi2_1_10",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What time does the library close today?",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "2 rules: content+counting"
+  },
+  {
+    "case_id": "multi2_1_11",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I went for a walk in the park this morning.",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "2 rules: content+counting"
+  },
+  {
+    "case_id": "multi2_1_12",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I'm planning an exciting travel adventure through Southeast Asia next year and I want to visit at least five countries including Thailand Vietnam Cambodia Laos and Myanmar over the course of three months.",
+    "expected_triggers": [
+      true,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "2 rules: content+counting"
+  },
+  {
+    "case_id": "multi2_1_13",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Sounds great, thanks!",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "2 rules: content+counting"
+  },
+  {
+    "case_id": "multi2_1_14",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What kind of music do you recommend for studying?",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "2 rules: content+counting"
+  },
+  {
+    "case_id": "multi2_1_15",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"travel\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been watching a lot of sports on TV lately.",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2"
+    ],
+    "verification_notes": "2 rules: content+counting"
+  },
+  {
+    "case_id": "multi2_2_16",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the best breeds of dogs for apartment living?",
+    "expected_triggers": [
+      true,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: format+negation"
+  },
+  {
+    "case_id": "multi2_2_17",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I just adopted two new dogs from the shelter last week.",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: format+negation"
+  },
+  {
+    "case_id": "multi2_2_18",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What time does the library close today?",
+    "expected_triggers": [
+      true,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: format+negation"
+  },
+  {
+    "case_id": "multi2_2_19",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I went for a walk in the park this morning.",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: format+negation"
+  },
+  {
+    "case_id": "multi2_2_20",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I'm planning an exciting travel adventure through Southeast Asia next year and I want to visit at least five countries including Thailand Vietnam Cambodia Laos and Myanmar over the course of three months.",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: format+negation"
+  },
+  {
+    "case_id": "multi2_2_21",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Sounds great, thanks!",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: format+negation"
+  },
+  {
+    "case_id": "multi2_2_22",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What kind of music do you recommend for studying?",
+    "expected_triggers": [
+      true,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: format+negation"
+  },
+  {
+    "case_id": "multi2_2_23",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been watching a lot of sports on TV lately.",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: format+negation"
+  },
+  {
+    "case_id": "multi2_3_24",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"sports\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What are the best breeds of dogs for apartment living?",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: content+negation"
+  },
+  {
+    "case_id": "multi2_3_25",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"sports\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I just adopted two new dogs from the shelter last week.",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: content+negation"
+  },
+  {
+    "case_id": "multi2_3_26",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"sports\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What time does the library close today?",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: content+negation"
+  },
+  {
+    "case_id": "multi2_3_27",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"sports\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I went for a walk in the park this morning.",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: content+negation"
+  },
+  {
+    "case_id": "multi2_3_28",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"sports\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I'm planning an exciting travel adventure through Southeast Asia next year and I want to visit at least five countries including Thailand Vietnam Cambodia Laos and Myanmar over the course of three months.",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: content+negation"
+  },
+  {
+    "case_id": "multi2_3_29",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"sports\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Sounds great, thanks!",
+    "expected_triggers": [
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: content+negation"
+  },
+  {
+    "case_id": "multi2_3_30",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"sports\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "What kind of music do you recommend for studying?",
+    "expected_triggers": [
+      true,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: content+negation"
+  },
+  {
+    "case_id": "multi2_3_31",
+    "condition_type": "multi_2",
+    "num_rules": 2,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"music\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message does NOT mention \"sports\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been watching a lot of sports on TV lately.",
+    "expected_triggers": [
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "2 rules: content+negation"
+  },
+  {
+    "case_id": "multi4_32",
+    "condition_type": "multi_4",
+    "num_rules": 4,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 3: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\nRule 4: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I've been thinking about getting some dogs and I have a lot of questions about which breeds would be the best fit for my family given that we live in a small apartment with two young children who are very active and energetic?",
+    "expected_triggers": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "4 rules: content+format+counting+negation, triggers=[True, True, True, True]"
+  },
+  {
+    "case_id": "multi4_33",
+    "condition_type": "multi_4",
+    "num_rules": 4,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 3: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\nRule 4: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I love dogs.",
+    "expected_triggers": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "4 rules: content+format+counting+negation, triggers=[True, False, False, True]"
+  },
+  {
+    "case_id": "multi4_34",
+    "condition_type": "multi_4",
+    "num_rules": 4,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 3: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\nRule 4: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "Why is the sky blue?",
+    "expected_triggers": [
+      false,
+      true,
+      false,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "4 rules: content+format+counting+negation, triggers=[False, True, False, True]"
+  },
+  {
+    "case_id": "multi4_35",
+    "condition_type": "multi_4",
+    "num_rules": 4,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 3: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\nRule 4: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I recently finished a comprehensive renovation of my entire house which took about six months and involved replacing all the flooring installing new kitchen cabinets and completely redoing both bathrooms from scratch.",
+    "expected_triggers": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "4 rules: content+format+counting+negation, triggers=[False, False, True, True]"
+  },
+  {
+    "case_id": "multi4_36",
+    "condition_type": "multi_4",
+    "num_rules": 4,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 3: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\nRule 4: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I enjoy cooking dinner.",
+    "expected_triggers": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "4 rules: content+format+counting+negation, triggers=[False, False, False, False]"
+  },
+  {
+    "case_id": "multi4_37",
+    "condition_type": "multi_4",
+    "num_rules": 4,
+    "system_prompt": "You are a helpful assistant. You must follow ALL of the rules below precisely.\n\nRule 1: If the user mentions \"dogs\" in their message, you MUST include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in your response.\nRule 2: If the user's message is a question (contains a question mark), you MUST include the exact text \"\ud83d\udd34RED_MARKER\ud83d\udd34\" somewhere in your response.\nRule 3: If the user's message contains more than 20 words, you MUST include the exact text \"\ud83d\udfe2GREEN_MARKER\ud83d\udfe2\" somewhere in your response.\nRule 4: If the user's message does NOT mention \"cooking\", you MUST include the exact text \"\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1\" somewhere in your response.\n\nImportant: Follow the rules exactly as stated. If a rule's condition is met, you MUST perform the specified action. If a rule's condition is NOT met, do NOT perform the action. Respond naturally to the user's message while following all applicable rules.",
+    "user_message": "I want to ask about keeping dogs healthy through proper nutrition and cooking homemade meals for them because I've read several articles suggesting that commercial dog food may not be the best option for all breeds especially those with sensitive stomachs?",
+    "expected_triggers": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35",
+      "\ud83d\udd34RED_MARKER\ud83d\udd34",
+      "\ud83d\udfe2GREEN_MARKER\ud83d\udfe2",
+      "\ud83d\udfe1YELLOW_MARKER\ud83d\udfe1"
+    ],
+    "verification_notes": "4 rules: content+format+counting+negation, triggers=[True, True, True, False]"
+  },
+  {
+    "case_id": "unconditional_0",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "What are some strategies for better sleep?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  },
+  {
+    "case_id": "unconditional_1",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "Sure, sounds good.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  },
+  {
+    "case_id": "unconditional_2",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "What's the difference between a meteor and a meteorite?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  },
+  {
+    "case_id": "unconditional_3",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "What should I have for dinner tonight?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  },
+  {
+    "case_id": "unconditional_4",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "How do I organize my closet efficiently?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  },
+  {
+    "case_id": "unconditional_5",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "Can you explain how bridges are engineered?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  },
+  {
+    "case_id": "unconditional_6",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "What are the benefits of meditation?",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  },
+  {
+    "case_id": "unconditional_7",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "Hi there.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  },
+  {
+    "case_id": "unconditional_8",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "Tell me an interesting fact I probably don't know.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  },
+  {
+    "case_id": "unconditional_9",
+    "condition_type": "unconditional",
+    "num_rules": 1,
+    "system_prompt": "You are a helpful assistant. You MUST always include the exact text \"\ud83d\udd35BLUE_MARKER\ud83d\udd35\" somewhere in every response you give, no matter what the user says.",
+    "user_message": "Explain the concept of compound interest.",
+    "expected_triggers": [
+      true
+    ],
+    "markers": [
+      "\ud83d\udd35BLUE_MARKER\ud83d\udd35"
+    ],
+    "verification_notes": "Unconditional baseline: marker should always appear"
+  }
+]

@@ -1,0 +1,8 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We introduced \benchname, a benchmark for measuring in-context if-then capacity in large language models. Our evaluation of three GPT-4.1 family models across 144 test cases and 7 condition categories reveals that conditional instruction following is measurable, inconsistent across condition types ($p < 0.002$), and systematically biased toward over-triggering (FP:FN ratio of 2.83:1). Sustained/adversarial conditions where users attempt to override system-prompt rules are the hardest category, with even the frontier model dropping to 78.6\% accuracy. Model size is a strong predictor of performance, with a monotonic relationship across all categories.
+
+These findings have immediate practical value: practitioners deploying conditional rules in LLM system prompts should expect over-triggering as the dominant failure mode, use frontier models for reliability-critical conditions, and treat adversarial robustness as a distinct challenge. For researchers, in-context if-then capacity provides a tractable and informative lens for evaluating instruction following beyond flat constraint checking.
+
+Future work should extend \benchname to additional model families, multi-turn conversations, and naturalistic (non-marker-based) conditional actions. The question of whether chain-of-thought prompting or structured rule formats can improve conditional accuracy remains open. More broadly, understanding why smaller models default to over-compliance---and whether this reflects a fundamental property of instruction tuning---is a question with implications for both alignment and deployment.

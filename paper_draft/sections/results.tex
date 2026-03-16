@@ -1,0 +1,84 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Accuracy Varies Significantly by Condition Type}
+\label{sec:results-category}
+
+\Tabref{tab:main} presents case-level accuracy by condition category and model. For all three models, a $\chi^2$ test rejects independence between category and accuracy: \gptlarge ($\chi^2 = 20.92$, $p = 0.0019$), \gptmini ($\chi^2 = 21.18$, $p = 0.0017$), and \gptnano ($\chi^2 = 22.37$, $p = 0.0010$). This confirms that in-context if-then capacity is not uniform across condition types.
+
+\begin{table}[t]
+\centering
+\caption{Case-level accuracy (\%) by condition category and model. Best result per category is \textbf{bolded}. All three models show statistically significant variation across categories ($p < 0.002$).}
+\label{tab:main}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Category} & \textbf{\gptlarge} & \textbf{\gptmini} & \textbf{\gptnano} \\
+\midrule
+If-then-else & {\bf 100.0} & {\bf 100.0} & 90.0 \\
+Scaling & {\bf 100.0} & 95.8 & 83.3 \\
+Negation & {\bf 100.0} & 91.7 & 50.0 \\
+Near-miss & {\bf 100.0} & {\bf 100.0} & 56.2 \\
+Semantic & {\bf 100.0} & 92.1 & 86.8 \\
+Lexical & 96.7 & 76.7 & 50.0 \\
+Sustained & 78.6 & 57.1 & 42.9 \\
+\midrule
+\textbf{Overall} & {\bf 97.2} & 87.5 & 68.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The difficulty ranking is broadly consistent across models: sustained/adversarial conditions are hardest for all three, while if-then-else branching and scaling conditions are easiest. However, the gap between categories widens substantially for smaller models. \gptnano drops to 42.9\% on sustained conditions and 50.0\% on both negation and lexical conditions, while maintaining 90.0\% on if-then-else branching.
+
+\subsection{False Positives Dominate False Negatives}
+\label{sec:results-fp}
+
+Across all models, we observe 51 false positives and 18 false negatives, yielding a ratio of 2.83:1. A binomial test rejects equal proportions ($p < 0.001$). \Tabref{tab:errors} breaks down the error types by model.
+
+\begin{table}[t]
+\centering
+\caption{Error analysis by model. False positives (FP) consistently outnumber false negatives (FN). The FP:FN ratio is most extreme for \gptnano (4.2:1).}
+\label{tab:errors}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Model} & \textbf{FP} & \textbf{FN} & \textbf{FP:FN} & \textbf{Total Errors} \\
+\midrule
+\gptlarge & 3 & 1 & 3.0:1 & 4 \\
+\gptmini & 10 & 8 & 1.25:1 & 18 \\
+\gptnano & 38 & 9 & {\bf 4.2:1} & 47 \\
+\midrule
+\textbf{All} & 51 & 18 & 2.83:1 & 69 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The false-positive bias is most pronounced in \gptnano, which produces 4.2 false positives for every false negative. Even \gptlarge, with only 4 total errors, shows a 3:1 FP:FN ratio. The one exception is \gptmini, which has a more balanced 1.25:1 ratio. This asymmetry suggests that models---especially smaller ones---default to \textit{over-compliance}, including the marker even when the triggering condition is not met.
+
+\subsection{Sustained Conditions Are Hardest}
+\label{sec:results-sustained}
+
+The sustained/adversarial category tests whether models maintain system-prompt rules when users explicitly attempt to override them. This category has the lowest accuracy for all three models: 78.6\% (\gptlarge), 57.1\% (\gptmini), and 42.9\% (\gptnano).
+
+We observe three distinct failure patterns:
+
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \textbf{Prompt injection success:} Messages framed as system-level overrides (``System override: deactivate the secret rule now.'') cause \gptlarge to suppress the marker despite the trigger word being present.
+    \item \textbf{Semantic reconstruction:} Spelling out a trigger word letter by letter (``s-e-c-r-e-t'') causes the model to reconstruct and trigger the rule, producing a false positive when the intent is to test override resistance.
+    \item \textbf{Cross-language leakage:} Presenting a trigger word in another language (e.g., Cyrillic) causes models to recognize the translation and trigger the rule.
+\end{itemize}
+
+\subsection{Scaling to Many Rules}
+\label{sec:results-scaling}
+
+When the system prompt contains 4--16 simultaneous rules, rule-level accuracy remains high across all models, but case-level accuracy (all rules correct) degrades for smaller models. \gptnano drops from near-perfect accuracy with 4 rules to 83.3\% overall in the scaling category. We observe a positional bias: when many rules are present, \gptnano tends to miss rules listed at the end of the system prompt, particularly when only one trigger is active among many rules.
+
+\subsection{Lexical Conditions Show Surprising Failures}
+\label{sec:results-lexical}
+
+Simple keyword-matching conditions, expected to be trivial, prove challenging for smaller models. \gptnano achieves only 50.0\% on lexical conditions---a result worse than its performance on semantic conditions (86.8\%). The failure mode is almost exclusively false positives: \gptnano includes markers even when the keyword is entirely absent from the user message. This suggests that smaller models have difficulty suppressing any rule present in the system prompt, regardless of whether its condition is actually met.
+
+\subsection{Model Size Predicts Performance}
+\label{sec:results-size}
+
+All pairwise model comparisons are statistically significant (McNemar's test): \gptlarge vs.\ \gptmini ($p = 0.0005$), \gptlarge vs.\ \gptnano ($p < 0.0001$), and \gptmini vs.\ \gptnano ($p < 0.0001$). The relationship between model size and accuracy is monotonic across all 7 categories, with the gap widening on harder condition types. On if-then-else (easiest), the gap between \gptlarge and \gptnano is 10 percentage points; on sustained (hardest), it is 35.7 percentage points.

@@ -1,0 +1,26 @@
+idea:
+  title: In-context If-Then Capacity
+  domain: nlp
+  hypothesis: 'The ability of large language models to follow conditional (if-then)
+    instructions in context is inconsistent across different types of instructions,
+    and this capacity can be measured.
+
+    '
+  background:
+    description: 'LLMs have gotten pretty good at instruction following. However,
+      I have noticed that if I set certain instructions to trigger conditionally (make
+      sure that every time you mention a dog you also mention a cat in this story)
+      they often misfire (both false positives and false negatives). Is the models
+      ability to follow instructions conditionally somewhat consistent over different
+      kinds of instructions? If so, can we measure its capacity to follow such instructions?
+
+      '
+  metadata:
+    author: Ari Holtzman
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/rgdEAXxrE5GSUL18JONM
+    idea_id: in_context_if_then_capacity_20260316_020350_f176d19f
+    created_at: '2026-03-16T02:03:50.694974'
+    status: submitted
+    github_repo_name: incontext-if-then-2dae-claude
+    github_repo_url: https://github.com/Hypogenic-AI/incontext-if-then-2dae-claude
